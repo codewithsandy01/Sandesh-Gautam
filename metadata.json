@@ -1,0 +1,6 @@
+{
+  "name": "SandY Chat",
+  "description": "SandY Chat - Intelligent conversational AI assistant powered by Gemini Intelligence.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

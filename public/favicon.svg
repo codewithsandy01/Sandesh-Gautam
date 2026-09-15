@@ -1,0 +1,27 @@
+<svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="48" height="48" rx="12" fill="#090d16"/>
+  <defs>
+    <linearGradient id="sandyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1" />
+      <stop offset="50%" stop-color="#a855f7" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+    <linearGradient id="sandyGlow" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4f46e5" />
+      <stop offset="100%" stop-color="#38bdf8" />
+    </linearGradient>
+  </defs>
+  <path
+    d="M34 15C34 11 30.5 8 26.5 8H18.5C14.5 8 11 11 11 15C11 19 14.5 22.5 18.5 22.5H28.5C32.5 22.5 36 26 36 30.5C36 34.5 32.5 38 28.5 38H17C13 38 9.5 34.5 9.5 30.5"
+    stroke="url(#sandyGrad)"
+    stroke-width="4.2"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <circle cx="34" cy="15" r="2.8" fill="#38bdf8" />
+  <circle cx="9.5" cy="30.5" r="2.8" fill="#a855f7" />
+  <path
+    d="M23.5 19.5L25 23.5L29 25L25 26.5L23.5 30.5L22 26.5L18 25L22 23.5L23.5 19.5Z"
+    fill="url(#sandyGlow)"
+  />
+</svg>

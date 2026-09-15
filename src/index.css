@@ -1,0 +1,139 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    @apply bg-slate-950 text-slate-100 antialiased font-sans;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.2);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(148, 163, 184, 0.35);
+}
+
+/* Markdown styling classes */
+.markdown-content {
+  line-height: 1.7;
+  font-size: 0.965rem;
+  word-break: break-word;
+}
+
+.markdown-content p {
+  margin-bottom: 0.85rem;
+}
+
+.markdown-content p:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-content h1,
+.markdown-content h2,
+.markdown-content h3,
+.markdown-content h4 {
+  font-weight: 600;
+  margin-top: 1.25rem;
+  margin-bottom: 0.6rem;
+  color: inherit;
+}
+
+.markdown-content h1 {
+  font-size: 1.45rem;
+}
+
+.markdown-content h2 {
+  font-size: 1.25rem;
+}
+
+.markdown-content h3 {
+  font-size: 1.1rem;
+}
+
+.markdown-content ul {
+  list-style-type: disc;
+  margin-left: 1.4rem;
+  margin-bottom: 0.85rem;
+}
+
+.markdown-content ol {
+  list-style-type: decimal;
+  margin-left: 1.4rem;
+  margin-bottom: 0.85rem;
+}
+
+.markdown-content li {
+  margin-bottom: 0.3rem;
+}
+
+.markdown-content blockquote {
+  border-left: 3px solid #6366f1;
+  padding-left: 1rem;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0.85rem;
+  opacity: 0.9;
+  font-style: italic;
+}
+
+.markdown-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.markdown-content th,
+.markdown-content td {
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+}
+
+.markdown-content th {
+  background: rgba(148, 163, 184, 0.1);
+  font-weight: 600;
+}
+
+.markdown-content a {
+  color: #818cf8;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.markdown-content a:hover {
+  color: #a5b4fc;
+}
+
+.markdown-content hr {
+  border: 0;
+  border-top: 1px solid rgba(148, 163, 184, 0.2);
+  margin: 1.25rem 0;
+}
+
+/* Pulsing glowing animation for SandY icon */
+@keyframes sandy-glow {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(99, 102, 241, 0.45);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(168, 85, 247, 0.65);
+  }
+}
+
+.animate-sandy-glow {
+  animation: sandy-glow 3s infinite ease-in-out;
+}
